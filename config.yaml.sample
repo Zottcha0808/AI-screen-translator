@@ -1,0 +1,12 @@
+hotkey: "alt+t"
+mouse_hotkey: "alt+y"
+translator: "gpt"
+gpt_model: "gpt-4o"  # または "gpt-3.5-turbo", "gpt-4"
+openai_api_key: "sk-~~~"
+language_from: "en"
+language_to: "ja"
+capture_region:
+  x: 0
+  y: 0
+  width: 1920
+  height: 1080

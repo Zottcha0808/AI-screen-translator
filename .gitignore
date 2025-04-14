@@ -1,0 +1,36 @@
+# Pythonバイトコード系
+__pycache__/
+*.py[cod]
+*.pyo
+
+# 仮想環境（あれば）
+.venv/
+venv/
+env/
+
+# 設定ファイル（個人情報・APIキーを含む可能性があるやつ）
+config.yaml
+
+# VSCode等のIDE個人設定
+.vscode/
+.idea/
+
+# ログや一時ファイル
+*.log
+*.tmp
+*.bak
+
+# Macのゴミファイル
+.DS_Store
+
+# Windowsのゴミファイル
+Thumbs.db
+
+# OCRキャプチャの一時出力（将来使うなら）
+captures/
+screenshots/
+output/
+
+# pipのキャッシュ
+pip-wheel-metadata/
+*.dist-info/
