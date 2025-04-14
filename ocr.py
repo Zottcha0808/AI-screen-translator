@@ -1,3 +1,4 @@
+import mss
 def capture_and_ocr(config):
     region = config.get("capture_region", {})
     lang = config.get("ocr_language", "eng")
