@@ -1,8 +1,10 @@
+### requirements.txt
+pynput
+googletrans==4.0.0-rc1
 openai>=1.0.0
 httpx>=0.23.0
-pytesseract
-pillow
 mss
+pillow
 keyboard
 pyyaml
-googletrans==4.0.0-rc1
+pytesseract
