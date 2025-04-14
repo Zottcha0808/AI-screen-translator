@@ -63,12 +63,14 @@ capture_region:
   y: 0
   width: 1920
   height: 1080
+```
+
 ---
 
-📝 ライセンス
+## ライセンス
 MITライセンスです。
 自由に使って改造してOK！
 
-👤 作者
+## 作者
 Zottcha0808（じむ）
 GitHub: @Zottcha0808
