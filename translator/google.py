@@ -1,15 +1,21 @@
-from googletrans import Translator as GoogleTranslatorCore
+from deep_translator import GoogleTranslator as DeepTranslatorCore
 
 class GoogleTranslator:
     def __init__(self, config):
-        self.translator = GoogleTranslatorCore()
         self.language_from = config.get("language_from", "en")
         self.language_to = config.get("language_to", "ja")
+        try:
+            self.translator = DeepTranslatorCore(source=self.language_from, target=self.language_to)
+        except Exception as e:
+            print(f"[ERROR] Google翻訳（内部：deep-translator）初期化エラー: {e}")
+            self.translator = None
 
     def translate(self, text):
+        if not self.translator:
+            return "[翻訳初期化失敗]"
+
         try:
-            result = self.translator.translate(text, src=self.language_from, dest=self.language_to)
-            return result.text
+            return self.translator.translate(text)
         except Exception as e:
-            print(f"[ERROR] Google翻訳エラー: {e}")
+            print(f"[ERROR] Google翻訳（内部：deep-translator）エラー: {e}")
             return "[翻訳エラー]"
