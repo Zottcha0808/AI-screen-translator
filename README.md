@@ -32,7 +32,7 @@
 
 3. Tesseract OCRをインストール（Windows）：
 
-    - ダウンロード：https://github.com/tesseract-ocr/tesseract/wiki#windows
+    - ダウンロード：https://github.com/tesseract-ocr/tesseract
     - インストール後、`ocr.py` の先頭で以下のようにパスを指定：
 
     ```python
